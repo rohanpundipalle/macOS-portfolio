@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaApple } from "react-icons/fa";
 import { navItems, navIcons } from "@constants";
-
 import dayjs from "dayjs";
 
 const Navbar = () => {
+  const [now, setNow] = useState(dayjs());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setNow(dayjs());
+    }, 1000); // every second
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <nav>
       <div>
@@ -36,7 +45,7 @@ const Navbar = () => {
         </ul>
 
         <time className="text-sm font-apple text-white">
-          {dayjs().format("ddd MMM D h:mm A")}
+          {now.format("ddd MMM D h:mm A")}
         </time>
       </div>
     </nav>
