@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import { FaApple } from "react-icons/fa";
 import { navItems, navIcons } from "@constants";
 import dayjs from "dayjs";
+import useWindowStore from "@store/window";
 
 const Navbar = () => {
   const [now, setNow] = useState(dayjs());
+  const { openWindow } = useWindowStore();
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -21,10 +23,10 @@ const Navbar = () => {
         <p className="font-bold text-sm text-white">Rohan's Portfolio</p>
 
         <ul>
-          {navItems.map((item) => (
-            <li key={item.id}>
-              <p className="text-sm no-underline pointer-events-none text-white font-apple">
-                {item.name}
+          {navItems.map(({ id, name, type }) => (
+            <li key={id} onClick={() => openWindow(type)}>
+              <p className="text-sm no-underline text-white font-apple">
+                {name}
               </p>
             </li>
           ))}
