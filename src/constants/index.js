@@ -228,7 +228,7 @@ const WORK_LOCATION = {
       name: "Nike Ecommerce Website Application",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-5", // icon position inside Finder
+      position: "top-5 left-5", // icon position inside Finder
       windowPosition: "top-[5vh] left-5", // optional: Finder window position
       children: [
         {
@@ -281,7 +281,7 @@ const WORK_LOCATION = {
       name: "AI Resume Analyzer",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-52 right-80",
+      position: "top-5 left-45",
       windowPosition: "top-[20vh] left-7",
       children: [
         {
@@ -334,7 +334,7 @@ const WORK_LOCATION = {
       name: "Food Delivery App",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-80",
+      position: "top-5 left-80",
       windowPosition: "top-[33vh] left-7",
       children: [
         {
