@@ -110,7 +110,7 @@ const techStack = [
   },
   {
     category: "Styling",
-    items: ["Tailwind CSS", "SASS", "CSS"],
+    items: ["CSS", "SASS", "Styled-Components"],
   },
   {
     category: "Backend",
@@ -118,7 +118,7 @@ const techStack = [
   },
   {
     category: "Database",
-    items: ["MongoDB", "PostgreSQL"],
+    items: ["MongoDB"],
   },
   {
     category: "Dev Tools",
@@ -131,29 +131,29 @@ const socials = [
     id: 1,
     text: "Github",
     icon: "/icons/github.svg",
-    bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
+    bg: "#0d1117",
+    link: "https://github.com/rohanpundipalle",
   },
-  {
-    id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
-    link: "https://jsmastery.com/",
-  },
+  // {
+  //   id: 2,
+  //   text: "Platform",
+  //   icon: "/icons/atom.svg",
+  //   bg: "#4bcb63",
+  //   link: "https://jsmastery.com/",
+  // },
   {
     id: 3,
     text: "Twitter/X",
     icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
+    bg: "#1DA1F2",
+    link: "https://x.com/code_with_rohxn",
   },
   {
     id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
-    bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+    bg: "#0077b5",
+    link: "https://www.linkedin.com/in/rohan2026/",
   },
 ];
 
